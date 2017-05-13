@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc1aae52-8456-4cf8-bd2f-3034f4708146" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/school/images/classes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/static/school/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/templates/school/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/templates/school/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/templates/school/gallery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/templates/school/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/School/templates/school/portal.html" />
-    </list>
+    <list default="true" id="bc1aae52-8456-4cf8-bd2f-3034f4708146" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
