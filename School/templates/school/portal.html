@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>PORTAL | ULUMBI SECONDARY SCHOOL</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'school/style.css' %}" type="text/css">
+</head>
+<body class="container">
+<div class="content-wrapper">
+    <section class="header">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target ="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'School:home' %}">Ulumbi School</a>
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:home' %}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:about' %}">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'School:portal' %}">PORTAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:gallery' %}">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:contacts' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!-- end of nav -->
+        <div class="row" id="banner">
+            <div class="col-md-12">
+                <h1>Portal</h1>
+                <p>Transparency redefined</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- enter content here -->
+    </section><!-- end of content -->
+    <div class="clearfix"></div>
+    <section class="footer text-center">
+        <a href="{% url 'School:gallery' %}"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span></a>
+        <ul class="ftr-nav">
+            <li><a href="{% url 'School:home' %}" class="active"><span class="fa fa-home" aria-hidden="true"> </span></a></li>
+            <li><a href="{% url 'School:about' %}l">About</a></li>
+            <li><a href="{% url 'School:portal' %}">Portal</a></li>
+            <li><a href="{% url 'School:gallery' %}">Gallery</a></li>
+        </ul>
+        <div class="copy-right">
+            <p>© 2017 Ulumbi Secondary School All rights reserved | <a href="/" target="_blank">  Crafted </a></p>
+        </div>
+    </section><!-- end of footer -->
+</div>
+</body>
+</html>

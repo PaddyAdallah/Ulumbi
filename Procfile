@@ -1,0 +1,1 @@
+web: gunicorn ULUMBI.wsgi --log-file -

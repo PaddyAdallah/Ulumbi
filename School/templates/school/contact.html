@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="You can reach the school through the following contact information">
+    <title>CONTACT | ULUMBI SECONDARY SCHOOL</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'school/style.css' %}" type="text/css">
+</head>
+<body class="container">
+<div class="content-wrapper">
+    <section class="header">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target ="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'School:home' %}">Ulumbi School</a>
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:home' %}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:about' %}">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:portal' %}">PORTAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:gallery' %}">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'School:contacts' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!-- end of nav -->
+        <div class="row no-gutter" id="banner">
+            <div class="col-sm-12">
+                <h1>Contact Us</h1>
+                <p>Stay close</p>
+            </div>
+        </div>
+    </section>
+    <section class="row no-gutter">
+        <div class="col-sm-7">
+            <h2>Send a message</h2>
+            <form id="main-contact-form" name="contact-form" method="post" action="">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-submit link" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="contact-info col-sm-5">
+            <h2>Contacts</h2>
+            <address>
+                You can reach us through:<br>
+                +254 791 583 105<br>
+                +254 797 350 352
+
+            </address>
+            <h2>Visit Us</h2>
+            You can also pay us a visit:
+            <div id="gmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.9736649623849!2d34.55202381979797!3d0.09803712007478652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780030287db4d31%3A0xd1c5605efda16c7e!2sUlumbi+Secondary+School%2C+Ulumbi%2C+Kenya!5e0!3m2!1sen!2s!4v1494431055675" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!-- end of map -->
+        </div>
+    </section><!-- end of content -->
+    <div class="clearfix"></div>
+    <section class="footer text-center">
+        <a href="{% url 'School:contacts' %}"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span></a>
+        <ul class="ftr-nav">
+            <li><a href="{% url 'School:home' %}" class="active"><span class="fa fa-home" aria-hidden="true"> </span></a></li>
+            <li><a href="{% url 'School:about' %}">About</a></li>
+            <li><a href="{% url 'School:portal' %}">Portal</a></li>
+            <li><a href="{% url 'School:gallery' %}">Gallery</a></li>
+        </ul>
+        <div class="copy-right">
+            <p>© 2017 Ulumbi Secondary School All rights reserved | <a href="/" target="_blank">  Crafted </a></p>
+        </div>
+    </section><!-- end of footer -->
+</div>
+</body>
+</html>

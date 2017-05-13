@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>ABOUT | ULUMBI SECONDARY SCHOOL</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'school/style.css' %}" type="text/css">
+</head>
+<body class="container">
+<div class="content-wrapper">
+    <section class="header">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target ="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Ulumbi School</a>
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:home' %}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'School:about' %}">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:portal' %}">PORTAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:gallery' %}">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'School:contact' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!-- end of nav -->
+        <div class="row" id="banner">
+            <div class="col-md-12">
+                <h1>About Ulumbi School</h1>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <!-- the content -->
+    <section>
+        <h2>Brief History</h2>
+        <p>Ulumbi Secondary School is a coeducational day and boarding school that was started in 1987 by the members of the local community, due to pressing need for close post-primary education. This was under the guidance of Mr. Allen Makopiyo, the then headteacher of the primary section. The strong support of the Anglican Church being critical in the inception of the school. It began striclty as a day school, but private arrangements were later made for the boarding section.</p>
+            <p>The school has grown considearably in its infrastructure, population (currently 489) and staff members, standing at 13 TSC and 10 on board. This strategic plan, even aims at increasing the numbers further, as Teacher adequacy is pivotal in academic palance.</p>
+            <p>This history in fact indicates clearly that due to adoption of this document, which will be our guide the school will reap a lot from further development, its lack of which, could have led to its stagnation. Over the years, the school has taken a good number of students to Universities, showing that the dream of this plan of Academic excellence, is indeed achievable and not merely, a speculation.</p>
+
+        <h2>Core Values</h2>
+        <p>As an institution, we believe in values which we instill in our students and guide us towards achieving our goals. These values are indeed significant in realizing the ambitions of the school's strategic plan. Among the values we uphold are:</p>
+        <ul>
+        <li><b>Discipline </b> - we view discipline as the key to scademic excellence and good life in general. The school therefore gives prominence greatly to this value. </li>
+        <li><b>Academic Excellence</b> - without good academic performance, discipline clearly reflect in our student, hence we lay a lot of emphasis on this. </li>
+        <li><b>Spirituality</b> - it it within our ambitions, to promote this virtue in our students even further because good performance and wisdom come with knowledge of God. </li>
+        <li><b>Talent Amplification</b> - our students are talented in a variety of ares. It is also within our plan to lead them in realizing their talents and exploring them to the maximum. This will be achieved through clubs and other forums of expression. Talents added to good performance, equals excellence. </li>
+        <li><b>Loyalty</b> - we also target at further modeling our students to be loyal citizens of this nation; people who will be proud to be Kenyans. </li>
+        <li><b>Harmony</b> - as a school, we also impart the virtue of good/harmonious relationship among students and between the school in entirity with the neighbourhood. This harmony will be in them thereafter. </li>
+        <li><b>Servicemanship</b> - The school would like to instill this virtue in the students. They would always be masters and not servants. </li>
+        <li><b>Cleanliness</b> - We encourage both spiritual and physical cleanliness. This is because cleanliness in next to godliness. </li>
+        <li><b>Unity in diversity</b> - Despite the different roots and cultures the students emanate from, the school aims at uniting its students and staff in general. We all share humanity and origin and should a brother/sister to one another. </li>
+    </ul>
+
+            <h2>The Administration</h2>
+    </section><!-- end of content -->
+    <section class="footer text-center">
+        <a href="{% url 'School:contacts' %}"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span></a>
+        <ul class="ftr-nav">
+            <li><a href="{% url 'School:home' %}" class="active"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span></a></li>
+            <li><a href="{% url 'School:about' %}">About</a></li>
+            <li><a href="{% url 'School:portal' %}">Portal</a></li>
+            <li><a href="{% url 'School:gallery' %}">Gallery</a></li>
+        </ul>
+        <div class="copy-right">
+            <p>© 2017 Ulumbi Secondary School All rights reserved | <a href="/" target="_blank">  Crafted </a></p>
+        </div>
+    </section><!-- end of footer -->
+</div>
+</body>
+</html>
