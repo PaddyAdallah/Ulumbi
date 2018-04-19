@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
-from .models import Home
+from .models import Employee
 
 def index_view(request):
-    writing_items = Home.objects.all()
+    writing_items = Employee.objects.all()
 
     context = {
         "writing_item": writing_items,
@@ -13,7 +13,7 @@ def index_view(request):
 
 
 def gallery_view(request):
-    writing_items = Home.objects.all()
+    writing_items = Employee.objects.all()
 
     context = {
         "writing_item": writing_items,
@@ -23,7 +23,7 @@ def gallery_view(request):
 
 
 def portal_view(request):
-    writing_items = Home.objects.all()
+    writing_items = Employee.objects.all()
 
     context = {
         "writing_item": writing_items,
@@ -32,7 +32,7 @@ def portal_view(request):
     return render(request, "school/portal.html", context)
 
 def contacts_view(request):
-    writing_items = Home.objects.all()
+    writing_items = Employee.objects.all()
 
     context = {
         "writing_item": writing_items,
@@ -41,7 +41,7 @@ def contacts_view(request):
     return render(request, "school/contact.html", context)
 
 def about_view(request):
-    writing_items = Home.objects.all()
+    writing_items = Employee.objects.all()
 
     context = {
         "writing_item": writing_items,
